@@ -1,7 +1,7 @@
 from pathlib import Path
 import plotly.graph_objects as go
 import streamlit as st
-iimport pandas as pd
+import pandas as pd
 
 # ----------------------------
 # Load CSV using a relative path
