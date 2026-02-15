@@ -1,83 +1,80 @@
 # Vehicles
-Visualización de datos de vehículos
+# Vehicle Data Visualization App
 
-Este proyecto es una aplicación sencilla creada con Streamlit que permite visualizar datos de anuncios de venta de vehículos mediante gráficos interactivos.
+This project is a **Streamlit web application** that allows users to explore a dataset of car listings in the U.S. through **interactive histograms and scatter plots**. It leverages **Plotly** for interactive visualizations and is designed for easy exploration of key variables such as odometer readings and prices.
 
-El objetivo principal es practicar:
+---
 
-Lectura de archivos CSV con Pandas
+## Features
 
-Creación de gráficos con Plotly
+- **Histogram Generation**: Visualize the distribution of odometer readings.
+- **Scatter Plot Generation**: Analyze the relationship between odometer and price.
+- **Interactive Controls**: 
+  - Buttons to generate plots on demand.
+  - Checkboxes to dynamically display or hide visualizations.
 
-Uso de botones y casillas de verificación en Streamlit
+---
 
-Descripción del programa
+## Technologies Used
 
-La aplicación carga un archivo llamado vehicles_us.csv, que contiene información sobre vehículos, incluyendo:
+- **Python 3.11**
+- **Streamlit** – for web app interface
+- **Pandas** – for data manipulation
+- **Plotly** – for interactive charts
+- **Pathlib** – for managing file paths
 
-Odómetro (kilometraje)
+---
 
-Precio
+## File Structure
 
-A partir de estos datos, la aplicación permite generar distintos gráficos.
 
-Funcionalidades
-1. Histograma del odómetro
+Vehicles/
+│
+├── app.py # Main Streamlit application
+├── vehicles_us.csv # Dataset of car listings
+└── notebooks/ # Optional Jupyter notebooks for exploration
 
-Muestra la distribución del kilometraje de los vehículos.
 
-Se puede generar usando:
+---
 
-Un botón
+## How to Run Locally
 
-Una casilla de verificación
+1. Clone this repository:
 
-2. Gráfico de dispersión (odómetro vs precio)
+```bash
+git clone https://github.com/<your-username>/Vehicles.git
+cd Vehicles
 
-Muestra la relación entre el kilometraje y el precio del vehículo.
+Create a virtual environment (recommended):
 
-También se puede generar usando:
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
-Un botón
+Install dependencies:
 
-Una casilla de verificación
+pip install -r requirements.txt
 
-Los gráficos son interactivos y permiten explorar mejor los datos.
-
-Tecnologías utilizadas
-
-Python
-
-Pandas (manejo de datos)
-
-Streamlit (interfaz de la aplicación)
-
-Plotly (visualización de datos)
-
-Cómo ejecutar el programa
-
-Asegurarse de tener instaladas las librerías necesarias:
-
-pip install streamlit pandas plotly
-
-Ejecutar la aplicación desde la carpeta del proyecto:
+Run the Streamlit app:
 
 streamlit run app.py
 
-La aplicación se abrirá automáticamente en el navegador.
+The app will open in your browser, and you can interact with histograms and scatter plots.
 
-Estructura del proyecto
-Vehicles_pro/
-│
-├── app.py
-├── vehicles_us.csv
-└── README.md
-Objetivo del proyecto
+Screenshots
 
-Este proyecto fue desarrollado con fines educativos para aprender a:
+Include a few screenshots of the app running here, e.g., histogram and scatter plot.
 
-Visualizar datos
+About the Dataset
 
-Crear aplicaciones interactivas simples
+The dataset vehicles_us.csv contains car listings in the U.S., including attributes such as:
 
-Trabajar con datasets reales en Python
+odometer – distance the car has traveled (in miles)
+
+price – listing price of the car (in USD)
+
+This project focuses on visual exploration of these variables for insights and analysis.
+
+Author
+
+Juan Manuel Puentes Sayo – Biomedical Engineer & Data Enthusiast
