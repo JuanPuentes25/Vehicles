@@ -2,8 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go  # Importación de plotly.graph_objects como go
 
-car_data = pd.read_csv(r'C:\Users\Juan\Vehicles_pro\vehicles_us.csv')
-
+car_data = pd.read_csv(r'C:\Users\Juan\Vehicles_pro\Vehicles\vehicles_us.csv')
 
 st.header("Generación de un histograma")
 # Crear un botón en la aplicación Streamlit
